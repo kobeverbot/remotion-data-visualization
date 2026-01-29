@@ -6,6 +6,7 @@
   "scripts": {
     "start": "remotion studio Root.tsx",
     "build": "remotion render Root.tsx DataSummary out/video.mp4 --props '{\"title\":\"Resumen de Ventas\",\"data\":[{\"label\":\"Enero\",\"value\":120},{\"label\":\"Febrero\",\"value\":180},{\"label\":\"Marzo\",\"value\":150},{\"label\":\"Abril\",\"value\":200},{\"label\":\"Mayo\",\"value\":250}],\"maxValue\":250}'",
+    "build:dashboard": "remotion render Root.tsx MetricsDashboard out/dashboard.mp4",
     "render": "remotion render",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
