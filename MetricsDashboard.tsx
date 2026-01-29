@@ -330,8 +330,8 @@ const CircularProgress: React.FC<{
     <div
       style={{
         position: 'absolute',
-        right: 100,
-        top: 200,
+        right: 50,
+        top: 20,
         opacity,
       }}
     >
@@ -493,44 +493,52 @@ export const MetricsDashboard: React.FC<MetricsDashboardProps> = ({
       {/* SECCIÓN 2: KPIs (30 frames - todo el video) */}
       <Sequence from={30}>
         {/* KPI 1 - Top left */}
-        <KpiCard
-          label={kpis[0].label}
-          value={kpis[0].value}
-          prefix={kpis[0].prefix}
-          suffix={kpis[0].suffix}
-          color={kpis[0].color}
-          delay={0}
-        />
+        <div style={{ position: 'absolute', top: 200, left: 100 }}>
+          <KpiCard
+            label={kpis[0].label}
+            value={kpis[0].value}
+            prefix={kpis[0].prefix}
+            suffix={kpis[0].suffix}
+            color={kpis[0].color}
+            delay={0}
+          />
+        </div>
 
         {/* KPI 2 - Top right */}
-        <KpiCard
-          label={kpis[1].label}
-          value={kpis[1].value}
-          prefix={kpis[1].prefix}
-          suffix={kpis[1].suffix}
-          color={kpis[1].color}
-          delay={10}
-        />
+        <div style={{ position: 'absolute', top: 200, right: 100 }}>
+          <KpiCard
+            label={kpis[1].label}
+            value={kpis[1].value}
+            prefix={kpis[1].prefix}
+            suffix={kpis[1].suffix}
+            color={kpis[1].color}
+            delay={10}
+          />
+        </div>
 
         {/* KPI 3 - Bottom left */}
-        <KpiCard
-          label={kpis[2].label}
-          value={kpis[2].value}
-          prefix={kpis[2].prefix}
-          suffix={kpis[2].suffix}
-          color={kpis[2].color}
-          delay={20}
-        />
+        <div style={{ position: 'absolute', top: 420, left: 100 }}>
+          <KpiCard
+            label={kpis[2].label}
+            value={kpis[2].value}
+            prefix={kpis[2].prefix}
+            suffix={kpis[2].suffix}
+            color={kpis[2].color}
+            delay={20}
+          />
+        </div>
 
         {/* KPI 4 - Bottom right */}
-        <KpiCard
-          label={kpis[3].label}
-          value={kpis[3].value}
-          prefix={kpis[3].prefix}
-          suffix={kpis[3].suffix}
-          color={kpis[3].color}
-          delay={30}
-        />
+        <div style={{ position: 'absolute', top: 420, right: 100 }}>
+          <KpiCard
+            label={kpis[3].label}
+            value={kpis[3].value}
+            prefix={kpis[3].prefix}
+            suffix={kpis[3].suffix}
+            color={kpis[3].color}
+            delay={30}
+          />
+        </div>
       </Sequence>
 
       {/* SECCIÓN 3: Gráfico de líneas (90 frames - todo el video) */}
