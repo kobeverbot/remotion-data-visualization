@@ -1,0 +1,27 @@
+{
+  "name": "remotion-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Root.tsx",
+  "scripts": {
+    "start": "remotion studio Root.tsx",
+    "build": "remotion render Root.tsx DataSummary out/video.mp4 --props '{\"title\":\"Resumen de Ventas\",\"data\":[{\"label\":\"Enero\",\"value\":120},{\"label\":\"Febrero\",\"value\":180},{\"label\":\"Marzo\",\"value\":150},{\"label\":\"Abril\",\"value\":200},{\"label\":\"Mayo\",\"value\":250}],\"maxValue\":250}'",
+    "render": "remotion render",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "^4.0.410",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.410",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
